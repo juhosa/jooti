@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import TextLoop from "react-text-loop";
 import "./App.css";
 
