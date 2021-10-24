@@ -1,20 +1,18 @@
 import TextLoop from "react-text-loop";
 import "./App.css";
+import names from "./data/names";
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
         <div>
           <span>Jööti on </span>
           <TextLoop>
-            <code>tutkimusrekisteri</code>
-            <code>syysmyrsky</code>
-            <code>julkaisujärjestelmä</code>
-            <code>pötkylä</code>
-            <code>eläin</code>
-            <code>ajatushautomo</code>
-            <code>kevätmyrsky</code>
+            {names.map((asia) => {
+              return <code>{asia}</code>;
+            })}
           </TextLoop>
           .
         </div>
